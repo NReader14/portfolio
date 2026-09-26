@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Reader | Portfolio</title>
+  <meta name="description" content="Nathan Reader's portfolio. Currently in development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #14284b;
+      --navy-light: #1f3a5f;
+      --orange: #d9622b;
+      --pale: #d6ecf0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: 'Poppins', system-ui, sans-serif;
+      color: var(--pale);
+      background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 100%);
+      text-align: center;
+    }
+
+    main {
+      max-width: 560px;
+      animation: fade-up 0.8s ease both;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 6px 16px;
+      margin-bottom: 28px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange);
+      border: 1px solid var(--orange);
+      border-radius: 999px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: #ffffff;
+    }
+
+    h1 span {
+      color: var(--orange);
+    }
+
+    .line {
+      width: 64px;
+      height: 4px;
+      margin: 28px auto;
+      background: var(--orange);
+      border-radius: 2px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .links {
+      margin-top: 36px;
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      padding: 10px 22px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--navy);
+      background: var(--pale);
+      border-radius: 8px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .links a:hover,
+    .links a:focus-visible {
+      background: var(--orange);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      main { animation: none; }
+      .links a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="status">In development</div>
+    <h1>Nathan <span>Reader</span></h1>
+    <div class="line"></div>
+    <p>My portfolio is currently being built. Please check back soon to see my projects and experience.</p>
+    <div class="links">
+      <a href="https://github.com/NReader14">GitHub</a>
+      <a href="mailto:nreader1405@gmail.com">Email me</a>
+    </div>
+  </main>
+</body>
+</html>
