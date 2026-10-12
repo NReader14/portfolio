@@ -1,0 +1,45 @@
+/* Both pages sit in the same grid cell, so they overlap */
+.stack {
+  display: grid;
+  overflow-x: clip;
+}
+
+.stack > .page {
+  grid-area: 1 / 1;
+}
+
+.page.leaving {
+  pointer-events: none;
+}
+
+/* Keyframes */
+@keyframes in-from-right {
+  from { opacity: 0; transform: translateX(4rem); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes in-from-left {
+  from { opacity: 0; transform: translateX(-4rem); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes out-to-left {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-4rem); }
+}
+@keyframes out-to-right {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(4rem); }
+}
+
+/* Going forward: old page leaves left, new page arrives from the right */
+.stack.forward > .entering { animation: in-from-right 0.4s ease-out; }
+.stack.forward > .leaving  { animation: out-to-left 0.4s ease-out forwards; }
+
+/* Going back: the reverse */
+.stack.back > .entering { animation: in-from-left 0.4s ease-out; }
+.stack.back > .leaving  { animation: out-to-right 0.4s ease-out forwards; }
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .stack > .entering { animation: none; }
+  .stack > .leaving  { display: none; }
+}

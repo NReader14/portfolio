@@ -1,0 +1,78 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  width: 90%;
+  max-width: 50rem;
+  max-height: 90vh;
+  padding: 2rem;
+  overflow-y: auto;
+  text-align: center;
+  background: rgb(194, 83, 29, 0.8);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+}
+
+.panel ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin-top: 0;
+}
+
+.panel h2 {
+    font-size: 3rem;
+}
+
+.panel li, p {
+    font-size: 1.6rem;
+}
+
+.panel ul > li {
+   padding: 0.25rem 0.75rem;
+   border-radius: 0.7rem;
+   background-color: rgb(97, 40, 11);
+}
+
+.panel .list_title{
+  margin-bottom: 0.3rem;
+}
+
+.panel button {
+  background-color: rgb(97, 40, 11);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.panel a{
+  background-color: rgb(115, 44, 8);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.panel-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
