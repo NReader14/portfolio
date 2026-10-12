@@ -1,3 +1,6 @@
+import fishFrenzy from '../assets/fish-frenzy.png'
+
+
 const projects = [
     {
         id: 1,
@@ -7,7 +10,7 @@ const projects = [
         tech: ['Tech A', 'Tech B'],
         role: ['Role 1', 'Role 2'],
         repo: 'https://github.com/...',
-        image: 'images/fish-frenzy.png'
+        image: fishFrenzy
     },
     {
         id: 2,
@@ -17,7 +20,7 @@ const projects = [
         tech: ['Tech C', 'Tech D', 'Tech E'],
         role: ['Role 1'],
         repo: 'https://github.com/...',
-        image: 'images/fish-frenzy.png'
+        image: fishFrenzy
     },
     {
         id: 3,
@@ -27,7 +30,7 @@ const projects = [
         tech: ['Tech A'],
         role: ['Role 1', 'Role 2', 'Role 3'],
         repo: 'https://github.com/...',
-        image: 'images/fish-frenzy.png'
+        image: fishFrenzy
     },
     {
         id: 4,
@@ -37,7 +40,7 @@ const projects = [
         tech: ['Tech B', 'Tech F'],
         role: ['Role 2'],
         repo: 'https://github.com/...',
-        image: 'images/fish-frenzy.png'
+        image: fishFrenzy
     },
 ]
 
