@@ -1,0 +1,18 @@
+# Portfolio to-do
+
+## Content
+- [ ] Add real projects: Fish Frenzy, NovaChat, CanKing, Android task manager
+- [ ] Project images in src/assets (imported, not public paths)
+- [ ] Write the About page
+- [ ] Write the Contact page
+- [ ] Hobbies / personality section (games, gym)
+- [ ] Fix "expereince" typo on Home
+
+## Design
+- [ ] Choose final logo and set the favicon
+- [ ] Panel headings: smaller size, Fredoka font
+- [ ] Vertically centre the hero (align-items: center)
+- [ ] Mobile layout (later)
+
+## Deploy
+- [ ] Decide if the portfolio replaces nreader14.github.io

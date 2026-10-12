@@ -8,7 +8,7 @@ function Projects() {
     const [selectedProject, setSelectedProject] = useState(null)
     return (
         <>
-            <h1>Projects New</h1>
+            <h1>PROJECTS</h1>
            
                 {selectedProject && (
                     <ProjectDetails
