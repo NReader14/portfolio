@@ -6,10 +6,10 @@ const cardStyle = project.image
     return (
         <li>
             <button onClick={() => onSelect(project)} style={cardStyle}>
-                <h2>{project.title}</h2>
-                <p>{project.description}</p>
+                <h2 className="projectCard_text">{project.title}</h2>
+                <p className="projectCard_text">{project.description}</p>
 
-                <ul>
+                <ul className="techList">
                     {project.tech.map((tech) => (
                         <li key={tech}>{tech}</li>
                     ))}

@@ -1,10 +1,10 @@
 /** Project Summary Boxes */
 #projectContainer {
-    width: 90%;
+    width: 95%;
     background-color: rgb(1, 1, 58, 0.3);
     margin: 0 auto;
     border-radius: 2em;
-   padding: auto;
+    padding: 0.3rem;
 }
 
 #projectContainer > ul {
@@ -19,8 +19,8 @@
 #projectContainer > ul > li {
     padding: 1rem;
     display: flex;
-    width: 50rem;
-    height: 30rem;
+    width: 35rem;
+    height: 25rem;
     margin: 0.5rem;
 }
 
@@ -63,7 +63,7 @@
 #projectContainer li > button > ul > li {
    padding: 0.25rem 0.75rem;
    border-radius: 0.7rem;
-   background-color: rgb(6, 6, 96);
+   background-color: rgb(24, 24, 91);
 }
 
 #projectContainer button {
@@ -73,11 +73,25 @@
 }
 
 #projectContainer button h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
-#projectContainer button li, p {
-    font-size: 1.6rem;
+#projectContainer button p {
+    font-size: 1.5rem;
 }
 
-/* 
+#projectContainer button li{    font-size: 1.3rem;
+}
+
+/*  */
+
+.projectCard_text{
+    background-color:rgba(17, 35, 65, 0.8);
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    padding: 0.9rem 0.5rem;
+    border-color: white;
+    border-style: solid;
+}

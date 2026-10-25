@@ -5,7 +5,7 @@ function ProjectDetails({ project, onBack }) {
         <div className="overlay" onClick={onBack}>
             <div className="panel" onClick={(e) => e.stopPropagation()}>
                 <h2>{project.title}</h2>
-                <p>{project.long_Description}</p>
+                <p className='panel_desc'>{project.long_Description}</p>
 
                 <p className="list_title">Technologies Used :</p>
                 <ul>

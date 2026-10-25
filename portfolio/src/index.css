@@ -24,3 +24,23 @@ h1{
   justify-content: center;
   font-size: 5rem;
 }
+
+.coming-soon {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(17, 35, 65, 0.8);
+  border-radius: 1.5rem;
+}
+
+.coming-soon h2 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.coming-soon p {
+  font-size: 1.1rem;
+  margin: 0;
+}

@@ -15,7 +15,7 @@
   padding: 2rem;
   overflow-y: auto;
   text-align: center;
-  background: rgb(194, 83, 29, 0.8);
+  background: rgb(11, 26, 51, 0.8);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 2rem;
@@ -33,16 +33,26 @@
 
 .panel h2 {
     font-size: 3rem;
+   background-color: #060e1b;
+   padding: 0.5rem;
+   border-radius: 2.5rem;
 }
 
 .panel li, p {
     font-size: 1.6rem;
 }
 
+.panel_desc{
+    font-size: 1.6rem;
+    background-color: rgb(6, 14, 27, 0.8);
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
 .panel ul > li {
    padding: 0.25rem 0.75rem;
    border-radius: 0.7rem;
-   background-color: rgb(97, 40, 11);
+   background-color: #060e1b;
 }
 
 .panel .list_title{
@@ -50,7 +60,7 @@
 }
 
 .panel button {
-  background-color: rgb(97, 40, 11);
+  background-color: #060e1b;
   border: none;
   border-radius: 0.4rem;
   padding: 0.5rem;
@@ -60,7 +70,7 @@
 }
 
 .panel a{
-  background-color: rgb(115, 44, 8);
+  background-color: #060e1b;
   border: none;
   border-radius: 0.4rem;
   padding: 0.5rem;
@@ -76,3 +86,4 @@
   gap: 1rem;
   font-size: 1.3rem;
 }
+
