@@ -22,7 +22,7 @@
 
 .project_container > ul > li {
   display: flex;
-  width: 35rem;
+  width: min(35rem, 100%);
   height: 25rem;
   padding: 1rem;
   margin: 0.5rem;
@@ -80,4 +80,34 @@
   background-color: color-mix(in srgb, var(--navy-dark) 80%, transparent);
   border: 3px solid var(--white);
   border-radius: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .project_container {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+
+  .project_container > ul > li {
+    height: auto;
+    min-height: 22rem;
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+  }
+
+  .project_container button h2 {
+    font-size: 1.5rem;
+  }
+
+  .project_container button p {
+    font-size: 1.1rem;
+  }
+
+  .project_container li > button > ul > li {
+    font-size: 1rem;
+  }
+
+  .projectCard_text {
+    width: 90%;
+  }
 }

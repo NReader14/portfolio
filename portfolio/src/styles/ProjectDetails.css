@@ -35,7 +35,7 @@
 }
 
 .panel h2 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 6vw, 3rem);
   padding: 0.5rem;
   background-color: var(--surface-alt);
   border: 1px solid var(--border);
@@ -93,4 +93,23 @@
   align-items: center;
   gap: 1rem;
   font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  .panel {
+    width: 95%;
+    max-height: 92vh;
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .panel li,
+  .panel p,
+  .panel_desc {
+    font-size: 1.2rem;
+  }
+
+  .panel-actions {
+    font-size: 1.1rem;
+  }
 }

@@ -33,6 +33,12 @@
   --border: rgba(20, 40, 75, 0.2);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body,
 header,
 button {
@@ -46,6 +52,20 @@ body {
   color: var(--text);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--link);
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+}
+
 .coming-soon {
   width: 70%;
   margin: 2rem auto;
@@ -57,7 +77,8 @@ body {
   border-radius: 1.5rem;
 }
 
-h1 {
-  text-align: center;
-  font-size: 5rem;
+@media (max-width: 600px) {
+  .coming-soon {
+    width: 90%;
+  }
 }

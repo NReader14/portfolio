@@ -3,6 +3,7 @@ import './App.css'
 import './styles/Transitions.css'
 import Header from './components/Header'
 import { Home, Projects, About, Contact } from './pages'
+import './styles/Header.css'
 
 const pages = ['Home', 'Projects', 'About', 'Contact']
 const DURATION = 400 // must match the 0.4s in Transitions.css
