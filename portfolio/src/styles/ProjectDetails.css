@@ -2,10 +2,10 @@
   position: fixed;
   inset: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .panel {
@@ -15,10 +15,13 @@
   padding: 2rem;
   overflow-y: auto;
   text-align: center;
-  background: rgb(11, 26, 51, 0.8);
+  color: var(--text);
+  background: color-mix(in srgb, var(--surface) 95%, transparent);
+  border: 2px solid var(--accent);
+  border-radius: 2rem;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  border-radius: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .panel ul {
@@ -32,51 +35,56 @@
 }
 
 .panel h2 {
-    font-size: 3rem;
-   background-color: #060e1b;
-   padding: 0.5rem;
-   border-radius: 2.5rem;
+  font-size: 3rem;
+  padding: 0.5rem;
+  background-color: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 2.5rem;
+  transition: background-color 0.3s ease;
 }
 
-.panel li, p {
-    font-size: 1.6rem;
+.panel li,
+.panel p {
+  font-size: 1.6rem;
 }
 
-.panel_desc{
-    font-size: 1.6rem;
-    background-color: rgb(6, 14, 27, 0.8);
-    border-radius: 1rem;
-    padding: 0.3rem;
+.panel_desc {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  background-color: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .panel ul > li {
-   padding: 0.25rem 0.75rem;
-   border-radius: 0.7rem;
-   background-color: #060e1b;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  transition: background-color 0.3s ease;
 }
 
-.panel .list_title{
+.panel .list_title {
   margin-bottom: 0.3rem;
 }
 
-.panel button {
-  background-color: #060e1b;
-  border: none;
-  border-radius: 0.4rem;
+.panel button,
+.panel a {
   padding: 0.5rem;
   font: inherit;
   color: inherit;
+  background-color: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.panel a{
-  background-color: #060e1b;
-  border: none;
-  border-radius: 0.4rem;
-  padding: 0.5rem;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
+.panel button:hover,
+.panel a:hover {
+  background-color: var(--accent);
+  color: var(--white);
 }
 
 .panel-actions {
@@ -86,4 +94,3 @@
   gap: 1rem;
   font-size: 1.3rem;
 }
-

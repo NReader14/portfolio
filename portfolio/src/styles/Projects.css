@@ -1,97 +1,83 @@
-/** Project Summary Boxes */
-#projectContainer {
-    width: 95%;
-    background-color: rgb(1, 1, 58, 0.3);
-    margin: 0 auto;
-    border-radius: 2em;
-    padding: 0.3rem;
+/* Project summary boxes */
+.project_container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.3rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2em;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-#projectContainer > ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-}
-#projectContainer > ul > li {
-    padding: 1rem;
-    display: flex;
-    width: 35rem;
-    height: 25rem;
-    margin: 0.5rem;
+.project_container > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
-#projectContainer button {
-   width: 100%;
-   height: 100%;
-   border-radius: 3dvh;
-   color: white;
-   background-size: cover;
-   background-position: center;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
+.project_container > ul > li {
+  display: flex;
+  width: 35rem;
+  height: 25rem;
+  padding: 1rem;
+  margin: 0.5rem;
 }
 
-#projectContainer button {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)),
-        var(--bg-image);
-    background-size: cover;
-    background-position: center;
+.project_container button {
+  width: 100%;
+  height: 100%;
+  font: inherit;
+  color: var(--white);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    var(--bg-image, none);
+  background-size: cover;
+  background-position: center;
+  border-radius: 3dvh;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.9);
 }
 
-#projectContainer button:hover {
-    background-image:
-        linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.1)),
-        var(--bg-image);
+.project_container button:hover {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+    var(--bg-image, none);
 }
 
-
-#projectContainer li > button > ul {
-   list-style: none;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 0.5rem;
-   padding: 0;
-   margin: 0;
-   margin: 0.5rem;
+.project_container button h2 {
+  font-size: 2rem;
 }
 
-#projectContainer li > button > ul > li {
-   padding: 0.25rem 0.75rem;
-   border-radius: 0.7rem;
-   background-color: rgb(24, 24, 91);
+.project_container button p {
+  font-size: 1.5rem;
 }
 
-#projectContainer button {
-    width: 100%;
-    height: 100%;
-    font: inherit;
+.project_container li > button > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.5rem;
 }
 
-#projectContainer button h2 {
-    font-size: 2rem;
+.project_container li > button > ul > li {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.3rem;
+  background-color: var(--navy);
+  border-radius: 0.7rem;
 }
 
-#projectContainer button p {
-    font-size: 1.5rem;
-}
-
-#projectContainer button li{    font-size: 1.3rem;
-}
-
-/*  */
-
-.projectCard_text{
-    background-color:rgba(17, 35, 65, 0.8);
-    width: 70%;
-    margin: auto;
-    margin-top: 1rem;
-    border-radius: 1.5rem;
-    padding: 0.9rem 0.5rem;
-    border-color: white;
-    border-style: solid;
+.projectCard_text {
+  width: 70%;
+  margin: 1rem auto 0;
+  padding: 0.9rem 0.5rem;
+  background-color: color-mix(in srgb, var(--navy-dark) 80%, transparent);
+  border: 3px solid var(--white);
+  border-radius: 1.5rem;
 }

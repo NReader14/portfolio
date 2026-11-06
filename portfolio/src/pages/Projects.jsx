@@ -6,24 +6,29 @@ import '../styles/Projects.css'
 
 function Projects() {
     const [selectedProject, setSelectedProject] = useState(null)
+
     return (
         <>
             <h1>PROJECTS</h1>
-           
-                {selectedProject && (
-                    <ProjectDetails
-                        project={selectedProject}
-                        onBack={() => setSelectedProject(null)}
-                    />
-                )}
-          
-             <div id="projectContainer">
-            <ul>
-                {projects.map((project) => (
-                    <ProjectCard key={project.id} project={project} onSelect={setSelectedProject} />
-                ))}
+
+            {selectedProject && (
+                <ProjectDetails
+                    project={selectedProject}
+                    onBack={() => setSelectedProject(null)}
+                />
+            )}
+
+            <div className="project_container">
+                <ul>
+                    {projects.map((project) => (
+                        <ProjectCard
+                            key={project.id}
+                            project={project}
+                            onSelect={setSelectedProject}
+                        />
+                    ))}
                 </ul>
-              </div>
+            </div>
         </>
     )
 }
